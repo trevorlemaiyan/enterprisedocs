@@ -1,0 +1,16 @@
+services:
+  enterprisedocs-api:
+    build: .
+    # .env is optional: without it the API still runs, with offline search and no answer generation.
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "8000:8000"
+    volumes:
+      - index:/app/data/index   # keep the search index between restarts
+      - uploads:/app/docs       # keep uploaded documents (seeded from the image on first run)
+
+volumes:
+  index:
+  uploads:

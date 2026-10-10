@@ -1,0 +1,20 @@
+# Secrets - never commit
+.env
+
+# Generated search index (rebuilt from docs/ on startup)
+data/index/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+*.tmp
+eval-index-*/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,144 @@
+{
+  "description": "Retrieval evaluation set. 'expected_contains' is a phrase that must appear in one of the top-k retrieved chunks. 'paraphrased' questions deliberately avoid the documents' wording. 'out_of_scope' questions must NOT be answerable.",
+  "in_scope": [
+    {
+      "question": "How many days of annual leave do employees get?",
+      "expected_document": "Leave_Policy.pdf",
+      "expected_contains": "21 working days"
+    },
+    {
+      "question": "How long is the probation period?",
+      "expected_document": "HR_Policy.pdf",
+      "expected_contains": "probation period of three months"
+    },
+    {
+      "question": "How much notice must I give if I resign after confirmation?",
+      "expected_document": "HR_Policy.pdf",
+      "expected_contains": "30 days' written notice"
+    },
+    {
+      "question": "How long is paternity leave?",
+      "expected_document": "Leave_Policy.pdf",
+      "expected_contains": "two weeks of paternity leave"
+    },
+    {
+      "question": "What is the minimum password length?",
+      "expected_document": "IT_Support_Guide.pdf",
+      "expected_contains": "at least 14 characters"
+    },
+    {
+      "question": "What is the response time for a P1 critical incident?",
+      "expected_document": "IT_Support_Guide.pdf",
+      "expected_contains": "within 15 minutes"
+    },
+    {
+      "question": "What should I do if my laptop is stolen?",
+      "expected_document": "IT_Support_Guide.pdf",
+      "expected_contains": "lost or stolen"
+    },
+    {
+      "question": "How many quotations do I need for a KES 200,000 purchase?",
+      "expected_document": "Procurement_Policy.pdf",
+      "expected_contains": "three written quotations"
+    },
+    {
+      "question": "Who has to approve a purchase of KES 2,000,000?",
+      "expected_document": "Procurement_Policy.pdf",
+      "expected_contains": "approved by the Finance Director"
+    },
+    {
+      "question": "When are suppliers paid?",
+      "expected_document": "Procurement_Policy.pdf",
+      "expected_contains": "within 30 days"
+    },
+    {
+      "question": "Do I need a medical certificate when I am sick?",
+      "expected_document": "Leave_Policy.pdf",
+      "expected_contains": "medical certificate is required"
+    },
+    {
+      "question": "How many unused leave days can I carry forward to next year?",
+      "expected_document": "Leave_Policy.pdf",
+      "expected_contains": "maximum of five unused annual leave days"
+    },
+    {
+      "question": "What happens if I get a performance rating below 2?",
+      "expected_document": "HR_Policy.pdf",
+      "expected_contains": "90-day performance improvement plan"
+    },
+    {
+      "question": "How do I report a phishing email?",
+      "expected_document": "IT_Support_Guide.pdf",
+      "expected_contains": "security@acme.example"
+    },
+    {
+      "question": "Can I buy something urgently in an emergency without getting quotes?",
+      "expected_document": "Procurement_Policy.pdf",
+      "expected_contains": "without quotations"
+    },
+    {
+      "question": "Is multi-factor authentication required for the VPN?",
+      "expected_document": "IT_Support_Guide.pdf",
+      "expected_contains": "mandatory for email, the VPN"
+    },
+    {
+      "question": "How many days can I work from home each week?",
+      "expected_document": "HR_Policy.pdf",
+      "expected_contains": "up to two days per week"
+    },
+    {
+      "question": "How do I get paid study leave for an exam?",
+      "expected_document": "Leave_Policy.pdf",
+      "expected_contains": "paid study leave"
+    }
+  ],
+  "paraphrased": [
+    {
+      "question": "How many holiday days do I get each year?",
+      "expected_document": "Leave_Policy.pdf",
+      "expected_contains": "21 working days"
+    },
+    {
+      "question": "Can I take time off if I am ill?",
+      "expected_document": "Leave_Policy.pdf",
+      "expected_contains": "14 days of sick leave"
+    },
+    {
+      "question": "How strong does my login passphrase need to be?",
+      "expected_document": "IT_Support_Guide.pdf",
+      "expected_contains": "at least 14 characters"
+    },
+    {
+      "question": "What are the rules if I want to quit my job?",
+      "expected_document": "HR_Policy.pdf",
+      "expected_contains": "30 days' written notice"
+    },
+    {
+      "question": "Who signs off on big spending?",
+      "expected_document": "Procurement_Policy.pdf",
+      "expected_contains": "approved by the Finance Director"
+    },
+    {
+      "question": "My work phone went missing, who do I tell?",
+      "expected_document": "IT_Support_Guide.pdf",
+      "expected_contains": "lost or stolen"
+    },
+    {
+      "question": "Can I work from my house?",
+      "expected_document": "HR_Policy.pdf",
+      "expected_contains": "up to two days per week"
+    },
+    {
+      "question": "How soon will IT respond if the whole system is down?",
+      "expected_document": "IT_Support_Guide.pdf",
+      "expected_contains": "within 15 minutes"
+    }
+  ],
+  "out_of_scope": [
+    "What is the capital of France?",
+    "Who won the 2022 football World Cup?",
+    "What is the company's share price today?",
+    "Write me a poem about the ocean.",
+    "How do I bake sourdough bread?"
+  ]
+}
